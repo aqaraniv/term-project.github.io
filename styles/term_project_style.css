@@ -1,0 +1,28 @@
+.bookicon 
+{
+	vertical-align: top; margin: 1px;
+}
+.bookicon:hover 
+{
+	width: 100px; cursor: pointer; margin: 0 -10px 0 -10px;
+	border: 1px solid blue; z-index: 9999; position:relative;
+}
+.page
+{
+	padding:10px;
+}
+.page.active {
+	border: thin solid blue;
+}
+#box
+{
+	display: flex; 
+	flex-wrap: wrap;
+	width: 800px;
+}
+.boxitem
+{
+	width: 99%;
+	margin: 0.3%;
+	height:80px;
+}

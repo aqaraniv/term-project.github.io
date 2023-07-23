@@ -5,23 +5,19 @@
 		<link rel="stylesheet" href="styles/top_nav_style.css">
 		<link rel="stylesheet" href="styles/term_project_style.css">
 		<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-		<script src="scripts/search_tv_script.js"></script>
+		<script src="scripts/people_script.js"></script>
 		<script src="scripts/list_grid_script.js"></script>
 	</head>
-    <body>
-	    <div class="topnav">
+	<body>
+		<div class="topnav">
 			<a href="index.html">Movies</a>
-		    <a class="active" href="tv.html">TV Shows</a>
-			<a href="people.html">People</a>
+		    <a href="tv.html">TV Shows</a>
+			<a class="active" href="people.html">People</a>
 		</div>
 		
 		<h1>Term Project</h1>
 		
-	    <label id="lbl_search">Search Term:</label>
-		<input type="text" id="txt_search"><br><br>
-		<input type="button" id="btn_search_tv" value="Search TV Shows"> <input type="button" id="btn_popular_tv" value="Popular TV Shows">
-		
-		<br><br>
+		<br>
 		<div>
 			<span id="pages"></span> <a href="#" id="btnList">List View</a> | <a href="#" id="btnGrid">Grid View</a>
 		</div>
@@ -30,7 +26,6 @@
 		
 		<div id="books"></div>
 		<hr>
-		<div id="single_show" style="width: 800px; max-height: 100px"></div>
+		<div id="person" style="width: 800px; max-height: 100px"></div>
 	</body>
 </html>
-

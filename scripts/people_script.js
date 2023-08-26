@@ -7,7 +7,7 @@ $(document).ready(function ()
 			 type: "GET",
 			 url: url,
 			 beforeSend: function (xhr) {
-				 xhr.setRequestHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiZGQwN2E5OWRlYTUyNGQ3ZWViYzM3MDFlODAyNmM4MyIsInN1YiI6IjY0YmIzNjc0OWQ1OTJjMDBhZTg1YTdmOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MlyY2rxFcFOd-MJgoUqVLqzvrJTFTDf4OplLuP7e51U");
+				 
 			 }
 		 }).done(function (jsonData) {
 			 $("#books").html("<h2>Popular People</h2>");
@@ -31,7 +31,7 @@ $(document).ready(function ()
 			 type: "GET",
 			 url: url,
 			 beforeSend: function (xhr) {
-				 xhr.setRequestHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiZGQwN2E5OWRlYTUyNGQ3ZWViYzM3MDFlODAyNmM4MyIsInN1YiI6IjY0YmIzNjc0OWQ1OTJjMDBhZTg1YTdmOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MlyY2rxFcFOd-MJgoUqVLqzvrJTFTDf4OplLuP7e51U");
+				 
 			 }
 		 }).done(function (json) {
 			  var image_url = "https://image.tmdb.org/t/p/w500" + json.profile_path;

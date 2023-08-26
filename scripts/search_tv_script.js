@@ -4,7 +4,7 @@ $(document).ready(function ()
 
 		 $("#btn_search_tv").click(function ()
          {
-            var url=servicesite + $("#txt_search").val() + "&api_key=bdd07a99dea524d7eebc3701e8026c83";
+            
 			searchBooks(url);
 			
 			document.getElementById("pages").style.visibility = "visible";
@@ -33,7 +33,7 @@ $(document).ready(function ()
 			 var pages = document.getElementsByClassName("page");
 			 current[1].className = current[1].className.replace(" active", "");
 			 pages[number-1].className += " active";
-             var url=servicesite + $("#txt_search").val()+"&page="+(number) + "&api_key=bdd07a99dea524d7eebc3701e8026c83";
+             
              searchBooks(url);
          });
 
@@ -63,7 +63,7 @@ $(document).ready(function ()
 			 type: "GET",
 			 url: url,
 			 beforeSend: function (xhr) {
-				 xhr.setRequestHeader("Authorization", "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJiZGQwN2E5OWRlYTUyNGQ3ZWViYzM3MDFlODAyNmM4MyIsInN1YiI6IjY0YmIzNjc0OWQ1OTJjMDBhZTg1YTdmOCIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.MlyY2rxFcFOd-MJgoUqVLqzvrJTFTDf4OplLuP7e51U");
+				 
 			 }
 		 }).done(function (jsonData) {
 			 $("#books").html("<h2>Results</h2>");
@@ -79,7 +79,7 @@ $(document).ready(function ()
 
      function getBookDetails(id)
      {
-		 var url = 'https://api.themoviedb.org/3/tv/' + id + '?api_key=bdd07a99dea524d7eebc3701e8026c83';
+		 
 		  $.getJSON(url, function(json) {
 			  var image_url = "https://image.tmdb.org/t/p/w500" + json.poster_path;
 			  $('#single_show').html('<image width="100" height="100" src="' + image_url + '" />');
